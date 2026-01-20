@@ -1,0 +1,83 @@
+PROGRAM Prog1
+#info= QLD
+BOF
+
+
+(**)
+
+SOR  [0,1] (**) (**)  XIC  [1,0] (*BOOL_IN_2*) (*Running*)  
+ BST  XIC  [2,0] (*BOOL_IN_0*) (*Fill*)  XIO  [3,0] (*BOOL_IN_4*) (*fill sensor*)
+   NXB  XIC  [2,1] (*BOOL_IN_1*) (*Discharge*)  XIC  [3,1] (*BOOL_IN_3*) (*Low water sensor*)
+ BND
+  FB  [4,0] (*TOF*) (*TOF_1*) ( (*IN:IN*)(**) (**)  , (*PT:PT*)(*T#10s*) (**) ; (*Q:Q*)(**) (**)  , (*ET:ET*)(**) (**) )
+EOR [7,0]
+
+
+(*Should reset it because bool 0 will only energize when initally clicked, so any disruption even if it is just 1 second will stop the filling*)
+
+SOR  [0,4] (**) (**)  
+ BST  XIC  [1,0] (*BOOL_IN_0*) (*Fill*)
+   NXB  XIC  [1,1] (*BOOL_OUT_4*) (*Filling Light*)
+ BND
+  XIO  [2,0] (*BOOL_IN_5*) (*Stop*)  XIO  [3,0] (*BOOL_IN_4*) (*fill sensor*)  XIC  [4,0] (*TOF_1.Q*) (*Q*)  XIO  [5,0] (*BOOL_IN_1*) (*Discharge*)  
+ BST  OTE  [6,0] (*BOOL_OUT_0*) (*Fill Valve*)
+   NXB  
+ BST  OTE  [6,1] (*BOOL_OUT_4*) (*Filling Light*)
+   NXB  OTR  [6,2] (*BOOL_OUT_6*) (*idle Light*)
+ BND
+
+ BND
+
+EOR [7,0]
+
+
+(*Discharge logic*)
+
+SOR  [0,8] (**) (**)  
+ BST  XIC  [1,0] (*BOOL_IN_1*) (*Discharge*)
+   NXB  XIC  [1,1] (*BOOL_OUT_5*) (*Discharge light*)
+ BND
+  XIO  [2,0] (*BOOL_IN_5*) (*Stop*)  XIC  [3,0] (*BOOL_IN_3*) (*Low water sensor*)  XIC  [4,0] (*TOF_1.Q*) (*Q*)  XIO  [5,0] (*BOOL_OUT_0*) (*Fill Valve*)  
+ BST  
+ BST  OTE  [6,0] (*BOOL_OUT_2*) (*Discharge valve 1*)
+   NXB  OTE  [6,1] (*BOOL_OUT_3*) (*Discharge valve 2*)
+ BND
+
+   NXB  
+ BST  OTE  [6,2] (*BOOL_OUT_5*) (*Discharge light*)
+   NXB  OTR  [6,3] (*BOOL_OUT_6*) (*idle Light*)
+ BND
+
+ BND
+
+EOR [7,0]
+
+
+(**)
+
+SOR  [0,13] (**) (**)  XIO  [1,0] (*BOOL_IN_4*) (*fill sensor*)  XIO  [2,0] (*BOOL_OUT_4*) (*Filling Light*)  XIO  [3,0] (*BOOL_OUT_5*) (*Discharge light*)  OTS  [4,0] (*BOOL_OUT_6*) (*idle Light*)
+EOR [5,0]
+
+
+(*If stop button is pressed we re-energize the boolean at the begining which should reset the timer*)
+
+SOR  [0,15] (**) (**)  XIO  [1,0] (*BOOL_IN_5*) (*Stop*)  XIO  [2,0] (*BOOL_OUT_4*) (*Filling Light*)  XIO  [3,0] (*BOOL_OUT_5*) (*Discharge light*)  OTS  [4,0] (*BOOL_OUT_6*) (*idle Light*)
+EOR [5,0]
+
+
+(**)
+
+SOR  [0,17] (**) (**)  FB  [1,0] (*ANY_TO_INT*) (*1*) ( (*EN:EN*)(**) (**)  , (*i1:*)(*TOF_1.ET*) (**) ; (*ENO:ENO*)(**) (**)  , (*o1:*)(*displayTime*) (**) )  FB  [4,0] (*/*) (*2*) ( (*EN:EN*)(**) (**)  , (*i1:*)(*displayTime*) (**)  , (*i2:*)(*1000*) (**) ; (*ENO:ENO*)(**) (**)  , (*o1:*)(*INT_OUT_0*) (**) )
+EOR [7,0]
+
+
+(**)
+
+SOR  [0,21] (**) (**)  XIC  [1,0] (*BOOL_OUT_6*) (*idle Light*)  FB  [2,0] (*1 gain*) (*3*) ( (*EN:EN*)(**) (**)  , (*i1:*)(*6003*) (**) ; (*ENO:ENO*)(**) (**)  , (*o1:*)(*INT_OUT_0*) (**) )
+EOR [5,0]
+EOF
+#end_info
+#info= ID_MAX
+NextId=4
+#end_info
+END_PROGRAM

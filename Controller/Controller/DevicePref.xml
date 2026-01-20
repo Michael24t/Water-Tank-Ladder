@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevicePreferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Micro800ConnectionPath>DESKTOP-SFJRNKP!AB_ETHIP-1\192.168.86.31</Micro800ConnectionPath>
+  <RSLCPath>DESKTOP-SFJRNKP!AB_ETHIP-1\192.168.86.31</RSLCPath>
+  <FTLPath />
+</DevicePreferences>

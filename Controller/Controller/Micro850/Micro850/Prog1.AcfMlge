@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root Version="7">
+  <LanguageContainerStyle DisplayGrid="false" FunctionBlockInstanceName="true" VariableDisplayMode="NameAndAlias" VariableAlpha="255" VariableTextColor="windowtext" VariableOnlineTextColor="Red" VariableBackgroundColor="White" VariableGradientColor="White" Font="Microsoft Sans Serif, 8pt" CellWidth="30" CellHeight="25" NbCellsShapeWidth="4" NbCellsShapeHeight="2" CoilAllAligned="false" FitToWindowWidthEnabled="true" RungColor="WhiteSmoke" LabelColor="LightGoldenrodYellow" CommentColor="White" TextCommentColor="Green" RungCommentFont="Microsoft Sans Serif, 8.25pt" PowerRailColor="Silver" DisplayBlockImage="true" DisplayComment="true" PenWidth="2" DisplayLabel="false" OperatorBlockBackgroundColor="buttonface" OperatorBlockGradientColor="buttonface" FunctionBackgroundColor="Ivory" FunctionGradientColor="Ivory" FunctionBlockBackgroundColor="Silver" FunctionBlockGradientColor="Silver" Index="0">
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdRungShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" PowerRailColor="Silver" DisplayLabel="false" RungColor="WhiteSmoke" CommentColor="White" LabelColor="LightGoldenrodYellow" DisplayComment="true" Key="[0,1]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,1],[1,1]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,1],[2,1]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,1],[2,2]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,1],[3,1]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,1],[3,2]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.Core.Shape.WbPouCallShape" Assembly="ISaGRAF.Workbench.Mlge.Core" FunctionBlockInstanceName="true" Alpha="255" Background="Silver" BackgroundGradient="Silver" Key="[0,1],[4,1]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLDVariableAccessShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" Alpha="255" Background="#FFFFFFFF" BackgroundGradient="#FFFFFFFF" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,1],[4,1],[4,2],[4,2]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLDVariableAccessShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" Alpha="255" Background="#FFFFFFFF" BackgroundGradient="#FFFFFFFF" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,1],[4,1],[6,2],[6,2]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdRungShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" PowerRailColor="Silver" DisplayLabel="false" RungColor="WhiteSmoke" CommentColor="White" LabelColor="LightGoldenrodYellow" DisplayComment="true" Key="[0,13]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,13],[1,13]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdSubBranchShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,13],[2,13]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,13],[3,13]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdCoilShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,13],[4,13]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdRungShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" PowerRailColor="Silver" DisplayLabel="false" RungColor="WhiteSmoke" CommentColor="White" LabelColor="LightGoldenrodYellow" DisplayComment="true" Key="[0,15]">
+      <Text>If stop button is pressed we re-energize the boolean at the begining which should reset the timer 
+</Text>
+      <RtfText>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red0\green128\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs17 If stop button is pressed we re-energize the boolean at the begining which should reset the timer \par
+\par
+}
+</RtfText>
+    </ShapeStyle>
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,15],[1,15]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,15],[2,15]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,15],[3,15]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdCoilShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,15],[4,15]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdRungShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" PowerRailColor="Silver" DisplayLabel="false" RungColor="WhiteSmoke" CommentColor="White" LabelColor="LightGoldenrodYellow" DisplayComment="true" Key="[0,17]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.Core.Shape.WbPouCallShape" Assembly="ISaGRAF.Workbench.Mlge.Core" FunctionBlockInstanceName="true" Key="[0,17],[1,17]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLDVariableAccessShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" Alpha="255" Background="#FFFFFFFF" BackgroundGradient="#FFFFFFFF" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,17],[1,17],[1,18],[1,18]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLDVariableAccessShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" Alpha="255" Background="#FFFFFFFF" BackgroundGradient="#FFFFFFFF" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,17],[1,17],[3,18],[3,18]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.Core.Shape.WbPouCallShape" Assembly="ISaGRAF.Workbench.Mlge.Core" FunctionBlockInstanceName="true" Alpha="255" Background="buttonface" BackgroundGradient="buttonface" Key="[0,17],[4,17]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLDVariableAccessShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" Alpha="255" Background="#FFFFFFFF" BackgroundGradient="#FFFFFFFF" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,17],[4,17],[4,18],[4,18]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLDVariableAccessShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" Alpha="255" Background="#FFFFFFFF" BackgroundGradient="#FFFFFFFF" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,17],[4,17],[4,19],[4,19]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLDVariableAccessShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" Alpha="255" Background="#FFFFFFFF" BackgroundGradient="#FFFFFFFF" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,17],[4,17],[6,18],[6,18]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdRungShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" PowerRailColor="Silver" DisplayLabel="false" RungColor="WhiteSmoke" CommentColor="White" LabelColor="LightGoldenrodYellow" DisplayComment="true" Key="[0,21]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,21],[1,21]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.Core.Shape.WbPouCallShape" Assembly="ISaGRAF.Workbench.Mlge.Core" FunctionBlockInstanceName="true" Alpha="255" Background="buttonface" BackgroundGradient="buttonface" Key="[0,21],[2,21]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLDVariableAccessShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" Alpha="255" Background="#FFFFFFFF" BackgroundGradient="#FFFFFFFF" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,21],[2,21],[2,22],[2,22]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLDVariableAccessShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" Alpha="255" Background="#FFFFFFFF" BackgroundGradient="#FFFFFFFF" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,21],[2,21],[4,22],[4,22]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdRungShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" PowerRailColor="Silver" DisplayLabel="false" RungColor="WhiteSmoke" CommentColor="White" LabelColor="LightGoldenrodYellow" DisplayComment="true" Key="[0,4]">
+      <Text>Should reset it because bool 0 will only energize when initally clicked, so any disruption even if it is just 1 second will stop the filling</Text>
+      <RtfText>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red0\green128\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs17 Should reset it because bool 0 will only energize when initally clicked, so any disruption even if it is just 1 second will stop the filling\par
+}
+</RtfText>
+    </ShapeStyle>
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,4],[1,4]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,4],[1,5]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,4],[2,4]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,4],[3,4]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,4],[4,4]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,4],[5,4]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdCoilShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,4],[6,4]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdCoilShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,4],[6,5]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdCoilShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,4],[6,6]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdRungShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" PowerRailColor="Silver" DisplayLabel="false" RungColor="WhiteSmoke" CommentColor="White" LabelColor="LightGoldenrodYellow" DisplayComment="true" Key="[0,8]">
+      <Text>Discharge logic 
+</Text>
+      <RtfText>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red0\green128\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs17 Discharge logic \par
+\par
+}
+</RtfText>
+    </ShapeStyle>
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,8],[1,8]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,8],[1,9]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,8],[2,8]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,8],[3,8]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,8],[4,8]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdContactShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,8],[5,8]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdCoilShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,8],[6,10]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdCoilShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,8],[6,11]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdCoilShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,8],[6,8]" />
+    <ShapeStyle Type="ISaGRAF.Workbench.Mlge.LanguageContainer.LD.Shape.WbLdCoilShape" Assembly="ISaGRAF.Workbench.Mlge.LanguageContainer.LD" FontColor="windowtext" DisplayMode="NameAndAlias" Key="[0,8],[6,9]" />
+  </LanguageContainerStyle>
+</Root>
